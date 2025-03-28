@@ -328,6 +328,24 @@
             var(--card-title-font-size,
                 var(--font-size-heading-regular));
     }
+
+    .button {
+        background-color: var(--background-accent-main);
+        border-radius: var(--border-radius-2);
+        cursor: pointer;
+        display: inline-flex;
+        font-family: var(--ff-heading);
+        font-weight: 700;
+        font-size: var(--font-size-md);
+        padding: .5rem 1rem;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            color: var(--text-high-contrast);
+            background-color: var(--background-accent-light);
+        }
+    }
 }
 
 @layer utilities {

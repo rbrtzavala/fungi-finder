@@ -307,6 +307,27 @@
             font-size: var(--font-size-heading-xl);
         }
     }
+
+    .card {
+        display: grid;
+        gap: var(--card-gap, 1rem);
+        background-color: var(--background-light);
+        border-radius: var(--border-radius-2);
+        padding: 1rem;
+
+        img {
+            border-radius: var(--border-radius-2);
+        }
+    }
+
+    .card__title {
+        color:
+            var(--card-title-color,
+                var(--text-brand));
+        font-size:
+            var(--card-title-font-size,
+                var(--font-size-heading-regular));
+    }
 }
 
 @layer utilities {

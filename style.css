@@ -288,6 +288,25 @@
             text-decoration: none;
         }
     }
+
+    .hero {
+        background-image: url(/assets/hero.webp);
+        background-size: cover;
+        background-position: center;
+        color: var(--text-high-contrast);
+        font-size: var(--font-size-md);
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: var(--font-size-heading-lg);
+
+        span {
+            color: var(--text-brand);
+            display: block;
+            font-size: var(--font-size-heading-xl);
+        }
+    }
 }
 
 @layer utilities {

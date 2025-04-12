@@ -282,7 +282,10 @@
         ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem 1rem;
+            gap: 0.5rem 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
         a {
@@ -323,17 +326,6 @@
         }
 
     }
-
-    /* .primary-navigation {
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-    } */
 
     .site-footer {
         background-color: var(--background-dark);

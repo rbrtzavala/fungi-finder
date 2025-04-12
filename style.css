@@ -194,6 +194,23 @@
 }
 
 @layer layout {
+    .skip-to-main:not(:focus) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .skip-to-main {
+        background-color: var(--background-accent-main);
+        border-radius: var(--border-radius-2);
+        padding: 1rem;
+        position: absolute;
+    }
+
     .flow>*+* {
         margin-top: var(--flow-space, 1em)
     }

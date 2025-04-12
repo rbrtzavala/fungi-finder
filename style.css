@@ -270,6 +270,7 @@
         background: transparent;
         border: 0;
         cursor: pointer;
+        display: none;
         z-index: 100;
 
         img {
@@ -315,6 +316,8 @@
     }
 
     @media (max-width: 760px) {
+
+        [aria-controls="primary-nav"],
         [aria-expanded="true"]+.primary-navigation {
             display: block;
         }
